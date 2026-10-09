@@ -5,17 +5,21 @@ class RunstenCli < Formula
   if OS.mac?
     if Hardware::CPU.arm?
       url "https://github.com/AndybSe/runsten/releases/download/v0.1.0/runsten-cli-aarch64-apple-darwin.tar.xz"
+      sha256 "19860a19881322e5e338798442eeb9484b7847c6b6927fb6402c03ebffd13d4e"
     end
     if Hardware::CPU.intel?
       url "https://github.com/AndybSe/runsten/releases/download/v0.1.0/runsten-cli-x86_64-apple-darwin.tar.xz"
+      sha256 "bae791df161db279bb9377ac28a777de811fd3d540b022ba79d7a7555752f619"
     end
   end
   if OS.linux?
     if Hardware::CPU.arm?
       url "https://github.com/AndybSe/runsten/releases/download/v0.1.0/runsten-cli-aarch64-unknown-linux-gnu.tar.xz"
+      sha256 "3e97d95abd417dba5d94ab83c92944a48cae87744416d641c4a86f9dd8f4a900"
     end
     if Hardware::CPU.intel?
       url "https://github.com/AndybSe/runsten/releases/download/v0.1.0/runsten-cli-x86_64-unknown-linux-gnu.tar.xz"
+      sha256 "d8938108f38efbdfe6a81cb7256f93b36bddcc28641bddf607aeef0dbd57d4d0"
     end
   end
   license "Apache-2.0"
